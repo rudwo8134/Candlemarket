@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,EACE,QAAS,CACT,SAAU,CACV,qBAAsB,CACtB,eACF,CACA,KACE,WAAY,CACZ,YAAa,CACb,gCACF","file":"main.e5423936.chunk.css","sourcesContent":["*{\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-size: 62.5%;\n}\nbody{\n  width: 100vw;\n  height: 100vh;\n  font-family: 'Raleway', sans-serif;\n}"]}

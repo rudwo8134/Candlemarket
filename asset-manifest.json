@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/Candlemarket/static/css/main.a617e044.chunk.css",
-    "main.js": "/Candlemarket/static/js/main.81d74d4f.chunk.js",
-    "main.js.map": "/Candlemarket/static/js/main.81d74d4f.chunk.js.map",
-    "runtime-main.js": "/Candlemarket/static/js/runtime-main.534f2896.js",
-    "runtime-main.js.map": "/Candlemarket/static/js/runtime-main.534f2896.js.map",
-    "static/js/2.cf256c39.chunk.js": "/Candlemarket/static/js/2.cf256c39.chunk.js",
-    "static/js/2.cf256c39.chunk.js.map": "/Candlemarket/static/js/2.cf256c39.chunk.js.map",
-    "static/js/3.daa55b89.chunk.js": "/Candlemarket/static/js/3.daa55b89.chunk.js",
-    "static/js/3.daa55b89.chunk.js.map": "/Candlemarket/static/js/3.daa55b89.chunk.js.map",
+    "main.css": "/Candlemarket/static/css/main.e5423936.chunk.css",
+    "main.js": "/Candlemarket/static/js/main.5cef2e12.chunk.js",
+    "main.js.map": "/Candlemarket/static/js/main.5cef2e12.chunk.js.map",
+    "runtime-main.js": "/Candlemarket/static/js/runtime-main.934b5fc6.js",
+    "runtime-main.js.map": "/Candlemarket/static/js/runtime-main.934b5fc6.js.map",
+    "static/js/2.8fcc51f6.chunk.js": "/Candlemarket/static/js/2.8fcc51f6.chunk.js",
+    "static/js/2.8fcc51f6.chunk.js.map": "/Candlemarket/static/js/2.8fcc51f6.chunk.js.map",
+    "static/js/3.bf1f0b8b.chunk.js": "/Candlemarket/static/js/3.bf1f0b8b.chunk.js",
+    "static/js/3.bf1f0b8b.chunk.js.map": "/Candlemarket/static/js/3.bf1f0b8b.chunk.js.map",
     "index.html": "/Candlemarket/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/Candlemarket/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.cf256c39.chunk.js.LICENSE.txt": "/Candlemarket/static/js/2.cf256c39.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/Candlemarket/static/media/logo.6ce24c58.svg"
+    "static/css/main.e5423936.chunk.css.map": "/Candlemarket/static/css/main.e5423936.chunk.css.map",
+    "static/js/2.8fcc51f6.chunk.js.LICENSE.txt": "/Candlemarket/static/js/2.8fcc51f6.chunk.js.LICENSE.txt",
+    "static/media/Logomain.af58d293.png": "/Candlemarket/static/media/Logomain.af58d293.png",
+    "static/media/hero1.880f15b1.jpg": "/Candlemarket/static/media/hero1.880f15b1.jpg",
+    "static/media/hero2.d7d5a74f.jpg": "/Candlemarket/static/media/hero2.d7d5a74f.jpg",
+    "static/media/hero3.15353a9d.jpg": "/Candlemarket/static/media/hero3.15353a9d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.534f2896.js",
-    "static/js/2.cf256c39.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.81d74d4f.chunk.js"
+    "static/js/runtime-main.934b5fc6.js",
+    "static/js/2.8fcc51f6.chunk.js",
+    "static/css/main.e5423936.chunk.css",
+    "static/js/main.5cef2e12.chunk.js"
   ]
 }
