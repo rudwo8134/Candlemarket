@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Candlemarket/static/css/main.a617e044.chunk.css",
+    "main.js": "/Candlemarket/static/js/main.81d74d4f.chunk.js",
+    "main.js.map": "/Candlemarket/static/js/main.81d74d4f.chunk.js.map",
+    "runtime-main.js": "/Candlemarket/static/js/runtime-main.534f2896.js",
+    "runtime-main.js.map": "/Candlemarket/static/js/runtime-main.534f2896.js.map",
+    "static/js/2.cf256c39.chunk.js": "/Candlemarket/static/js/2.cf256c39.chunk.js",
+    "static/js/2.cf256c39.chunk.js.map": "/Candlemarket/static/js/2.cf256c39.chunk.js.map",
+    "static/js/3.daa55b89.chunk.js": "/Candlemarket/static/js/3.daa55b89.chunk.js",
+    "static/js/3.daa55b89.chunk.js.map": "/Candlemarket/static/js/3.daa55b89.chunk.js.map",
+    "index.html": "/Candlemarket/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/Candlemarket/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.cf256c39.chunk.js.LICENSE.txt": "/Candlemarket/static/js/2.cf256c39.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Candlemarket/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.534f2896.js",
+    "static/js/2.cf256c39.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.81d74d4f.chunk.js"
+  ]
+}
