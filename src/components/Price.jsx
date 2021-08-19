@@ -75,7 +75,6 @@ const Parallaximg = styled.div`
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 50% -200px;
-  transition: all 0.3 ease-in-out;
 `;
 const ImgWrapper = styled.div`
   width: 100vw;
@@ -85,6 +84,7 @@ const ImgWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: white;
   .contents {
     width: 100%;
     display: flex;
@@ -126,42 +126,82 @@ const Shopimg = styled.div`
 `;
 const Contactcontainer = styled.div`
   width: 100vw;
-  height: 100vh;
-  background-color: black;
-  color:white;
+  height: 70vh;
+  background-color: transparent;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h1{
+  overflow: hidden;
+  h1 {
     font-size: 3.2rem;
     font-weight: 300;
     width: 40%;
-    text-align:center;
+    text-align: center;
   }
-  form{
+  form {
     margin-top: 3rem;
-    label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    label {
       display: none;
     }
-    div{
+    div {
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    input{
-      color:white;
+    input {
+      color: white;
       font-size: 1.5rem;
-      margin-left: 2rem;
       width: 50%;
       height: 5rem;
       background-color: transparent;
       border: none;
       border-bottom: 1px solid white;
     }
+    #email{
+      margin-left: 2rem;
+    }
+    #message {
+      margin-top: 2rem;
+      width: 100%;
+      height: 20rem;
+    }
+    button {
+      width: 50%;
+      padding: 1.5rem 3rem;
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      font-weight: 700;
+      box-shadow: 0 1px 1.5px rgba(255,255,255,0.6);
+    }
   }
+`;
+
+const Contactimg = styled.div`
+  width: 100vw;
+  height: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(${backgroundimg});
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  z-index: -3;
+  background-color: black;
 `;
 
 const Price = () => {
   const [value, setvalue] = useState();
+  const [value2, setvalu2] = useState();
   useEffect(() => {
     const handlscroll = async (e) => {
       const offset = await window.pageYOffset;
@@ -169,7 +209,9 @@ const Price = () => {
       const percentage = (await height) * 0.0001 * (offset - height);
       if (percentage > 0) {
         await setvalue(percentage);
+        await setvalu2(percentage - 300);
       }
+
     };
     window.addEventListener('scroll', handlscroll);
     return () => () => {
@@ -199,7 +241,7 @@ const Price = () => {
       </Wrapper>
       <ParallaxWrapper>
         <Parallaximg
-          style={{ transform: `translateY(${-300 + value * 4}px)` }}
+          style={{ transform: `translateY(${-100 + value * 4}px)` }}
         ></Parallaximg>
       </ParallaxWrapper>
       <Wrapper>
@@ -246,21 +288,22 @@ const Price = () => {
         </Shopimg>
       </ImgWrapper>
       <Contactcontainer>
-        <h1>
-          If you have any questions about our wine tours, please fill out this
-          form.
-        </h1>
-        <form action="">
-          <div>
-            <label htmlFor="name">Name</label>
-            <input id="name" type="text" placeholder="name"  />
-            <label htmlFor="email">E-mail address</label>
-            <input placeholder="email" id="email" type="email" />
-          </div>
-          <label htmlFor="message">Message</label>
-          <input id="message" placeholder="message" type="text" />
-          <button>Send</button>
-        </form>
+        <Contactimg style={{ transform: `translateY(${-300 + value2 * 4}px)`}}/>
+          <h1>
+            If you have any questions about our wine tours, please fill out this
+            form.
+          </h1>
+          <form action="">
+            <div>
+              <label htmlFor="Name">Name</label>
+              <input id="name" type="text" placeholder="Name" />
+              <label htmlFor="email">E-mail address</label>
+              <input placeholder="Email" id="email" type="email" />
+            </div>
+            <label htmlFor="message">Message</label>
+            <input id="message" placeholder="Message" type="text" />
+            <button>Send</button>
+          </form>
       </Contactcontainer>
     </>
   );
