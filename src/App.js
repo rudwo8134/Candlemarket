@@ -6,6 +6,7 @@ import Layout from "./components/Layout/Layout";
 // Pages
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
+import Shopdetail from "./pages/Shopdetail";
 
 
 
@@ -19,7 +20,9 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/shop">
-          <Shop/>
+          <Shop />
+        </Route>
+        <Route exact path="/shop/:id" render={(params)=><Shopdetail params={params}/>}>
         </Route>
       </Switch>
     </Layout>
