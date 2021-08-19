@@ -5,6 +5,7 @@ import {Switch,Route} from 'react-router-dom'
 import Layout from "./components/Layout/Layout";
 // Pages
 import Home from "./pages/Home";
+import Shop from "./pages/Shop";
 
 
 
@@ -13,11 +14,14 @@ import Home from "./pages/Home";
 function App() {
   return (
     <Layout>
-    <Switch>
-      <Route path="/">
-        <Home/>
-      </Route>
-    </Switch>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/shop">
+          <Shop/>
+        </Route>
+      </Switch>
     </Layout>
   );
 }

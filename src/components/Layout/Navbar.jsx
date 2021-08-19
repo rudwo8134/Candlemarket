@@ -77,7 +77,7 @@ const Navbar = () => {
         <Linkcomponent to="/">
           <Linkvaluecontainer>Blog</Linkvaluecontainer>
         </Linkcomponent>
-        <Linkcomponent to="/">
+        <Linkcomponent to="/shop">
           <Linkvaluecontainer>Shop</Linkvaluecontainer>
         </Linkcomponent>
         <Linkcomponent to="/">

@@ -70,11 +70,9 @@ const ParallaxWrapper = styled.div`
 const Parallaximg = styled.div`
   width: 100vw;
   height: 120vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(${backgroundimg});
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 50% -200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(${backgroundimg}) no-repeat center center fixed ;
+  background-size: cover;
 `;
 const ImgWrapper = styled.div`
   width: 100vw;
@@ -189,35 +187,15 @@ const Contactcontainer = styled.div`
 const Contactimg = styled.div`
   width: 100vw;
   height: 80%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(${backgroundimg});
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(${backgroundimg}) no-repeat center center fixed;
+  background-size: cover;
   position: absolute;
   z-index: -3;
   background-color: black;
 `;
 
 const Price = () => {
-  const [value, setvalue] = useState();
-  const [value2, setvalu2] = useState();
-  useEffect(() => {
-    const handlscroll = async (e) => {
-      const offset = await window.pageYOffset;
-      const height = await window.innerHeight;
-      const percentage = (await height) * 0.0001 * (offset - height);
-      if (percentage > 0) {
-        await setvalue(percentage);
-        await setvalu2(percentage - 300);
-      }
-
-    };
-    window.addEventListener('scroll', handlscroll);
-    return () => () => {
-      window.removeEventListener('scroll', handlscroll);
-    };
-  }, []);
   return (
     <>
       <Wrapper>
@@ -241,7 +219,6 @@ const Price = () => {
       </Wrapper>
       <ParallaxWrapper>
         <Parallaximg
-          style={{ transform: `translateY(${-100 + value * 4}px)` }}
         ></Parallaximg>
       </ParallaxWrapper>
       <Wrapper>
@@ -288,7 +265,7 @@ const Price = () => {
         </Shopimg>
       </ImgWrapper>
       <Contactcontainer>
-        <Contactimg style={{ transform: `translateY(${-300 + value2 * 4}px)`}}/>
+        <Contactimg />
           <h1>
             If you have any questions about our wine tours, please fill out this
             form.
